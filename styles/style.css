@@ -195,17 +195,21 @@ nav {
 }
 
 /* Destination Section */
-.destination {
+.destination,
+.choose-us {
     margin-top: 6.25em;
 }
 
-.destination-txt {
+.destination-txt,
+.choose-us-txt {
     margin-left: 0;
 
     width: 73em;
+
 }
 
-.destination h2 {
+.destination h2,
+.choose-us h2 {
     color: #131318;
     text-align: center;
     font-family: Mulish;
@@ -216,7 +220,8 @@ nav {
     margin-bottom: 1.5em;
 }
 
-.destination p {
+.destination p,
+.choose-us p {
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-family: Mulish;
@@ -270,6 +275,53 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+/* Choose Uss */
+.cards {
+    margin-left: 0;
+
+    width: 73em;
+}
+
+.card-row {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+
+
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    width: 35.8em;
+    height: 17.7em;
+    flex-shrink: 0;
+    border-radius: 16px;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    padding: 2em;
+}
+
+.card-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.card-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+
+    background: rgba(41, 206, 246, 0.05);
+
+
+
+
+}
+
+.card-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+
+    background: rgba(233, 68, 68, 0.05);
+}
 
 
 /* Small Devices */
@@ -322,7 +374,24 @@ nav {
         width: 100%;
     }
 
-    .destination-txt {
+    .destination-txt,
+    .choose-us-txt {
         width: 33.7em;
+    }
+
+    /* Choose Us */
+
+    .card-row,
+    .cards {
+        display: grid;
+
+        width: 33.7em;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        width: 30em;
+
     }
 }
