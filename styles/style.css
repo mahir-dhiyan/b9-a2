@@ -28,7 +28,8 @@
 }
 
 /* Nav Styles */
-header, main {
+header,
+main {
     margin-left: 7em;
     margin-right: 7em;
 }
@@ -154,66 +155,174 @@ nav {
     gap: 1.5em;
     margin-left: 12.5em;
 }
+
 /* Section Popular Tours */
-.popular-tours{
+.popular-tours {
     margin-top: 6em;
     display: flex;
     gap: 3.3em;
 }
-.pop-txt{
+
+.pop-txt {
     color: rgba(19, 19, 24, 0.70);
-font-family: Mulish;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px; /* 162.5% */
-width: 36em;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    width: 36em;
 }
-.pop-img{
+
+.pop-img {
     width: 33.7em;
-height: 34.3em;
+    height: 34.3em;
 }
-.last-para{
+
+.last-para {
     margin-bottom: 2em;
 }
-.pop-txt>h2{
+
+.pop-txt>h2 {
     margin-bottom: 1.5em;
     color: #131318;
 
-font-family: Mulish;
-font-size: 40px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
+
+/* Destination Section */
+.destination {
+    margin-top: 6.25em;
+}
+
+.destination-txt {
+    margin-left: 0;
+
+    width: 73em;
+}
+
+.destination h2 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 1.5em;
+}
+
+.destination p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.img-1,
+.img-2,
+.img-3 {
+    margin-top: 3em;
+
+}
+
+.img-1,
+.img-2,
+.img-3 {
+    display: flex;
+    gap: 1.5em;
+}
+
+.destination img {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+
+    border-radius: 1em;
+
+
+
+}
+
+.country-container {
+    position: relative;
+    text-align: center;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.country-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
 /* Small Devices */
 @media screen and (max-width:600px) {
+
     /* header */
-    .banner{
+    .banner {
         width: 33.7em;
-height: 483px;
-flex-shrink: 0;
-background-position: center;
+        height: 483px;
+        flex-shrink: 0;
+        background-position: center;
 
 
     }
-    header, main {
-     margin: 1em;
+
+    header,
+    main {
+        margin: 1em;
     }
-    .selections{
+
+    .selections {
         display: none;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 22px;
         text-align: center;
     }
-    .inputs{
+
+    .inputs {
         display: grid;
         margin-left: 11.5em;
     }
+
     /* popular tours */
-    .popular-tours{
+    .popular-tours {
         display: grid;
     }
- 
+
+    /* Choose Destination */
+    .img-1,
+    .img-2,
+    .img-3 {
+        display: grid;
+        width: 33.7em;
+
+    }
+
+    .destination img {
+        width: 100%;
+    }
+
+    .destination-txt {
+        width: 33.7em;
+    }
 }
