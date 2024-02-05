@@ -28,7 +28,7 @@
 }
 
 /* Nav Styles */
-header {
+header, main {
     margin-left: 7em;
     margin-right: 7em;
 }
@@ -118,7 +118,7 @@ nav {
     background-repeat: no-repeat;
     width: 73em;
     height: 30em;
-    border-radius: 16px;
+    border-radius: 1em;
     /* padding-left: 13.5em; */
     /* padding-right: 13.5em; */
     display: grid;
@@ -153,4 +153,67 @@ nav {
     display: flex;
     gap: 1.5em;
     margin-left: 12.5em;
+}
+/* Section Popular Tours */
+.popular-tours{
+    margin-top: 6em;
+    display: flex;
+    gap: 3.3em;
+}
+.pop-txt{
+    color: rgba(19, 19, 24, 0.70);
+font-family: Mulish;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+width: 36em;
+}
+.pop-img{
+    width: 33.7em;
+height: 34.3em;
+}
+.last-para{
+    margin-bottom: 2em;
+}
+.pop-txt>h2{
+    margin-bottom: 1.5em;
+    color: #131318;
+
+font-family: Mulish;
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+/* Small Devices */
+@media screen and (max-width:600px) {
+    /* header */
+    .banner{
+        width: 33.7em;
+height: 483px;
+flex-shrink: 0;
+background-position: center;
+
+
+    }
+    header, main {
+     margin: 1em;
+    }
+    .selections{
+        display: none;
+    }
+    .banner-title{
+        font-size: 22px;
+        text-align: center;
+    }
+    .inputs{
+        display: grid;
+        margin-left: 11.5em;
+    }
+    /* popular tours */
+    .popular-tours{
+        display: grid;
+    }
+ 
 }
