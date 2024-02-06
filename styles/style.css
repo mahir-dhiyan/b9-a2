@@ -209,7 +209,7 @@ nav {
 }
 
 .destination h2,
-.choose-us h2 {
+.choose-us h2, .unique-txt h2 {
     color: #131318;
     text-align: center;
     font-family: Mulish;
@@ -221,7 +221,7 @@ nav {
 }
 
 .destination p,
-.choose-us p {
+.choose-us p , .unique-txt p {
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-family: Mulish;
@@ -417,6 +417,17 @@ line-height: normal;
     width: 23em;
     margin-left: 2em;
 }
+/* Unique Part */
+.unique-txt{
+    text-align: center;
+}
+.unique-txt p{
+    margin-bottom: 3em ;
+}
+.unique-txt span{
+    color: #FF5400;
+}
+
 /* Small Devices */
 @media screen and (max-width:600px) {
 
@@ -510,4 +521,13 @@ line-height: normal;
     left: 13em;
     
 }
+/* Unique Section */
+.map iframe {
+    position: absolute;
+    /* top: 50%; */
+    left: 0;
+    width: 100% !important;
+    height: 50% !important;
+}
+
 }
